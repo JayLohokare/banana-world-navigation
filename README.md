@@ -42,7 +42,7 @@ Follow the instructions in `Navigation.ipynb` to get started with training your 
 
 After you have successfully completed the project, if you're looking for an additional challenge, you have come to the right place!  In the project, your agent learned from information such as its velocity, along with ray-based perception of objects around its forward direction.  A more challenging task would be to learn directly from pixels!
 
-To solve this harder task, you'll need to download a new Unity environment.  This environment is almost identical to the project environment, where the only difference is that the state is an 84 x 84 RGB image, corresponding to the agent's first-person view.  (**Note**: Udacity students should not submit a project with this new environment.)
+To solve this harder task, you'll need to download a new Unity environment.  This environment is almost identical to the project environment, where the only difference is that the state is an 84 x 84 RGB image, corresponding to the agent's first-person view.
 
 You need only select the environment that matches your operating system:
 - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/VisualBanana_Linux.zip)
@@ -59,3 +59,28 @@ Then, place the file in the `p1_navigation/` folder in the DRLND GitHub reposito
 ML-Agent - https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Installation-Windows.md
 
 Anaconda/TensorflowGPU - https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Installation-Windows.md
+
+
+# Implementation details
+The code has 2 primary parts
+1. Train-Test 
+2. Class declarations
+
+The Train-test code is in the Navigation.ipynb notebook
+Class declarations are in model.py and dqn_agent.py
+
+**Classes used:**
+QNetwork - Neural Network declaration
+Agent - Agent class to perform steps and learn
+ReplayBuffer - Buffer to store State-Action-Reward-NextState tuples to sample training data from
+
+The implementation uses Fixed Q values (2 Neural networks) and Replay buffer methods explained in Deep Q Learning paper. 
+
+**Training**
+- The training stage implemented performs typical Deep-Q learning training steps.
+- The model weights are saved in checkpoint.pth file (When average score is >14)
+- The training runs for 2000 epochs by default, with 1000 max number of steps per epoch
+- There is decaying epsilon to achieve gradually decreasing randomness in actions taken
+
+**Test**
+- The test phase loads the latest model from file system and getting score for the tests performed.
