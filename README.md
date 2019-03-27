@@ -70,6 +70,7 @@ The Train-test code is in the Navigation.ipynb notebook
 Class declarations are in model.py and dqn_agent.py
 
 **Classes used:**
+
 QNetwork - Neural Network declaration
 Agent - Agent class to perform steps and learn
 ReplayBuffer - Buffer to store State-Action-Reward-NextState tuples to sample training data from
