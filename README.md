@@ -2,7 +2,7 @@
 
 [image1]: https://user-images.githubusercontent.com/10624937/42135619-d90f2f28-7d12-11e8-8823-82b970a54d7e.gif "Trained Agent"
 
-# Project 1: Navigation
+# Navigation
 
 ### Introduction
 
@@ -55,6 +55,7 @@ Then, place the file in the `p1_navigation/` folder in the DRLND GitHub reposito
 (_For AWS_) If you'd like to train the agent on AWS, you must follow the instructions to [set up X Server](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md), and then download the environment for the **Linux** operating system above.
 
 
-3. Installation instuctions
+# Installation instuctions
 ML-Agent - https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Installation-Windows.md
+
 Anaconda/TensorflowGPU - https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Installation-Windows.md
