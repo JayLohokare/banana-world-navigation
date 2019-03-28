@@ -85,3 +85,11 @@ The implementation uses Fixed Q values (2 Neural networks) and Replay buffer met
 
 **Test**
 - The test phase loads the latest model from file system and getting score for the tests performed.
+
+# Useful links 
+Prioritized Experience Replay - https://github.com/rlcode/per <br>
+Deep learning frameworks comparison - https://www.netguru.com/blog/deep-learning-frameworks-comparison <br>
+Rainbow paper (DQN paper methods comparison) - https://arxiv.org/pdf/1710.02298.pdf <br>
+OpenAI Retro (Rainbow all menthods) - https://medium.com/intelligentunit/conquering-openai-retro-contest-2-demystifying-rainbow-baseline-9d8dd258e74b <br>
+
+
