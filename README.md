@@ -94,6 +94,5 @@ OpenAI Retro (Rainbow all menthods) - https://medium.com/intelligentunit/conquer
 
 # How is value based DQN different from policy based DRL
 1. In Value based NN, the output neurons are activated. Then we use Epsilon greedy policy to select the neuron (action) with highest value
-<br>
 2. In policy base NN implementations, the actication of neurons is the probability for that action! No more epsilon greedy approach, instead use these probabilities for selecting the action
 
