@@ -92,4 +92,8 @@ Deep learning frameworks comparison - https://www.netguru.com/blog/deep-learning
 Rainbow paper (DQN paper methods comparison) - https://arxiv.org/pdf/1710.02298.pdf <br>
 OpenAI Retro (Rainbow all menthods) - https://medium.com/intelligentunit/conquering-openai-retro-contest-2-demystifying-rainbow-baseline-9d8dd258e74b <br>
 
+# How is value based DQN different from policy based DRL
+1. In Value based NN, the output neurons are activated. Then we use Epsilon greedy policy to select the neuron (action) with highest value
+<br>
+2. In policy base NN implementations, the actication of neurons is the probability for that action! No more epsilon greedy approach, instead use these probabilities for selecting the action
 
